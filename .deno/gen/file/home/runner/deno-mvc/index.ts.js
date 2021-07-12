@@ -1,0 +1,4 @@
+import MVCServer from "./server/server.ts";
+const s = new MVCServer();
+s.serve();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJpbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLFNBQVMsTUFBTSxvQkFBb0IsQ0FBQTtBQUUxQyxNQUFNLENBQUMsR0FBRyxJQUFJLFNBQVMsRUFBRSxDQUFDO0FBQzFCLENBQUMsQ0FBQyxLQUFLLEVBQUUsQ0FBQyJ9
