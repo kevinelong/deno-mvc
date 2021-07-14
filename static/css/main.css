@@ -1,0 +1,30 @@
+body{
+        margin: 0;
+        padding:0;
+        background-color:#332211;
+        color: #ffeedd;
+        font-family:sans-serif;
+        text-align:center;
+        font-size: 100%;
+        overflow: hidden;
+}
+h1{
+        color:#eeddcc;
+        margin: 0 0 1rem 0;
+        background-color: #666666;
+        padding: 1rem;
+}
+h2{
+        margin:0;
+        background-color: #444444;
+}
+p{
+  padding: 1rem;
+  margin: 1rem;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}

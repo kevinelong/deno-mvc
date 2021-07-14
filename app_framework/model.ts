@@ -45,4 +45,3 @@ export class Model{
     return results;
   }
 }
-

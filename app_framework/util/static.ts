@@ -13,13 +13,14 @@ export class Static{
   read(path:string){
     const filePath= this.root_path + path;
     
-    console.log("Looking for",filePath);
     if(!existsSync(filePath)){
       return undefined;
     }
+
     const fileSize=(Deno.statSync(filePath)).size;
     const text = readFile(filePath);
     const size_text = fileSize.toString();
+
     return {
       body:text, 
       head:{
@@ -29,5 +30,6 @@ export class Static{
         }
       }
     };
+    
   }
 }
