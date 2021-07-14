@@ -1,0 +1,18 @@
+input{
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+input[type=submit]{
+  color:white;
+  background: green;
+  border-radius: 1em;
+  padding:1rem;
+  margin:1rem;
+  font-size: 1rem;
+  vertical-align: middle;
+  display: inline-flex;
+  align-items:center;
+  justify-content: center;
+  text-align:center;
+}

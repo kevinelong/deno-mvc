@@ -1,0 +1,41 @@
+
+#box{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100vh;
+}
+#message{
+  padding: 0.5rem;
+  border: none;
+  outline-width: 0;
+  flex:none;
+}
+#list{
+  flex: 1 1 auto;
+  flex-direction: column;
+  background-color: white;
+  overflow-y: scroll;
+  text-overflow: ellipsis;
+  text-align: left;
+  color: black;
+}
+#list > div{
+  border-bottom: 1px solid #dddddd;
+  padding: 1rem;
+}
+#list, #message {
+  font-size: 2rem;
+  width: 100%;
+}
+#send{
+  width: 100%;
+  font-size: 2rem;
+  background-color: green;
+  color: antiquewhite;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  flex: none;
+}

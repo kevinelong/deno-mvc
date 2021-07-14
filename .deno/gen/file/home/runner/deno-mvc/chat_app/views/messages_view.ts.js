@@ -1,0 +1,4 @@
+import { View } from "../../app_framework/view.ts";
+export const message_view = new View("<h1>{ message_text }</h1>\n<b>{ email }</b> <i>{ time_created }</i>");
+export const show_message = (d) => message_view.get(d);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWVzc2FnZXNfdmlldy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm1lc3NhZ2VzX3ZpZXcudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsT0FBTyxFQUFFLElBQUksRUFBRSxNQUFNLDZCQUE2QixDQUFDO0FBS25ELE1BQU0sQ0FBQyxNQUFNLFlBQVksR0FBRyxJQUFJLElBQUksQ0FBQyxxRUFBcUUsQ0FBQyxDQUFDO0FBQzVHLE1BQU0sQ0FBQyxNQUFNLFlBQVksR0FBRyxDQUFDLENBQVEsRUFBQyxFQUFFLENBQUEsWUFBWSxDQUFDLEdBQUcsQ0FBQyxDQUFDLENBQUMsQ0FBQyJ9
