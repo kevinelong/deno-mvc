@@ -6,9 +6,10 @@ document.addEventListener("DOMContentLoaded",()=>{
 
   message.focus();
 
+  const urlParams = new URLSearchParams(window.location.search.slice(1));
+    
   function send_message(){
-    const urlParams = new URLSearchParams(window.location.search.slice(1));
-      
+
     const data = {
       message_text: message.value, 
       email:urlParams.get("email")
@@ -68,11 +69,20 @@ function updateList(data){
     const m = data[i];
     const email = m.email.split("@")[0]; //REMOVE DOMAIN
     const when = m.time_created.split(" ")[1]; //REMOVE DATE
+
+    //GRAVATAR
+    const hash = CryptoJS.MD5(m.email);
+    const md5 = hash.toString(CryptoJS.enc.Hex)
+    const src=`https://secure.gravatar.com/avatar/${md5}?s=64`
+
     output.push(`
-    <div>
-      <small>${email}:</small> 
-      ${m.message_text}<br>
-      <small>${when}</small>
+    <div class="message">
+      <img src="${src}">
+      <div style="display:inline-block">
+        <small>${email}:</small> 
+        ${m.message_text}<br>
+        <small>${when}</small>
+        </div>
     </div>
     `);
   }
@@ -80,7 +90,10 @@ function updateList(data){
   list.scrollTop = list.scrollHeight;
 }
 
+function dataLoop(){
+  getData("/api/v1/messages/").then(updateList);
+  setTimeout(dataLoop,9999)
+}
 //FETCH IMMEDIATELY
-getData("/api/v1/messages/").then(updateList);
-
+dataLoop();
 });

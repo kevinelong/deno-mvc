@@ -27,7 +27,7 @@ export class MessagesController extends Controller{
     async function messages_view(e:ServerRequest){
       return {body: messages_model.read().map(show_message).join("\n\n"), head: SUCCESS };
     }
-    this.add("GET /messages_view/", validate);
+    this.add("GET /messages_view/", messages_view);
 
     async function api_messages(e:ServerRequest){
       return{body:JSON.stringify(messages_model.read()), head:SUCCESS_JSON};
