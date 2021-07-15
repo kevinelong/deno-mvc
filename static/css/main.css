@@ -5,26 +5,32 @@ body{
         color: #ffeedd;
         font-family:sans-serif;
         text-align:center;
-        font-size: 100%;
+        font-size: min(5vh, 5vw);
         overflow: hidden;
 }
 h1{
         color:#eeddcc;
-        margin: 0 0 1rem 0;
+        margin: 0 0 0.5em 0;
         background-color: #666666;
-        padding: 1rem;
+        padding: 0.5em;
+        font-size: 1em;
 }
 h2{
-        margin:0;
+        margin:0.25em;
         background-color: #444444;
+        font-size: 1em;
 }
 p{
-  padding: 1rem;
-  margin: 1rem;
+  padding: 1em;
+  margin: 1em;
 }
 a{
   text-decoration: none;
 }
 a:hover{
   text-decoration: underline;
+}
+
+input[type="submit"], button{
+  width:95%;
 }
