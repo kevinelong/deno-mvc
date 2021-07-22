@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 
     const data = {
       message_text: message.value, 
-      email:urlParams.get("email")
+      email: urlParams.get("email")
     };
     postData("/api/v1/messages/", data).then(updateList);
   }
